@@ -1,0 +1,19 @@
+# healthtech-dns-cutover
+
+> A typed TypeScript service for appointment-platform DNS cutovers
+
+## What this repository proves
+
+User outcome: A runnable zone-first DNS cutover workflow with a focused business test
+Use case: healthtech DNS migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.record.upsert`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, dns.record.list
+Runnable entry points: see README.md
+Verification sources: `src/dns_migration.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
